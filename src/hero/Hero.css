@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
-* {
-  /* border: 1px solid red; */
-}
-
 .hero {
   height: 55%;
   display: flex;
@@ -28,7 +24,7 @@
   height: 60px;
 }
 
-/*
+
 @keyframes sun-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -39,7 +35,7 @@
     animation: sun-spin infinite 20s linear;
   }
 }
-*/
+
 .hero-name {
   font-family: 'Birthstone', cursive;
   font-weight: 800;
@@ -52,10 +48,10 @@
   margin-left: 20px;
 }
 
-.hero-img {
+.hero .hero-img {
   width: 200px;
   height: 200px;
-  background-image: url(../../assets/images/hero.jpg);
+  background-image: url('./images/hero.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;

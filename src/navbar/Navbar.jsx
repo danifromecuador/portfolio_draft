@@ -1,6 +1,6 @@
 // Navbar.js
 import { useState, useEffect } from 'react';
-import '../styles/components/Navbar.css';
+import './Navbar.css';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);

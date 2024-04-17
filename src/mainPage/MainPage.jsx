@@ -1,6 +1,6 @@
 // MainPage.js
 import { useRef } from 'react';
-import '../styles/pages/MainPage.css';
+import './MainPage.css';
 
 export const MainPage = () => {
   const headerRef = useRef(null);

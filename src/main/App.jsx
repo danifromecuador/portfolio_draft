@@ -1,8 +1,8 @@
-import './styles/App.css'
-import { Navbar } from './components/Navbar'
-import { MainPage } from './pages/MainPage.jsx'
-import { Hero } from './components/Hero.jsx'
-import { Footer } from './components/Footer.jsx'
+import './App.css'
+import { Navbar } from '../navbar/Navbar.jsx'
+import { MainPage } from '../mainPage/MainPage.jsx'
+import { Hero } from '../hero/Hero.jsx'
+import { Footer } from '../footer/Footer.jsx'
 
 export const App = () => {
   return (

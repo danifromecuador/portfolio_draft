@@ -19,7 +19,7 @@
 /* active background effect */
 
 .active {
-  background-image: url(../../assets/images/stripes.png);
+  background-image: url(./stripes.png);
   background-repeat: no-repeat;
   margin-left: 18px;
 }
@@ -46,7 +46,7 @@
 .navbar .projects:hover,
 .navbar .skills:hover,
 .navbar .contact:hover {
-  background-image: url(../../assets/images/stripes.png);
+  background-image: url(./stripes.png);
   background-repeat: no-repeat;
   opacity: 55%;
 }
