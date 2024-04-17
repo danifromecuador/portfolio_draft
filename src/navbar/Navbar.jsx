@@ -1,9 +1,13 @@
 // Navbar.js
 import { useState, useEffect } from 'react';
-import '../styles/components/Navbar.css';
+import './Navbar.css';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
+  const [hoveredAbout, setHoveredAbout] = useState("")
+  const [hoveredProjects, setHoveredProjects] = useState("")
+  const [hoveredSkills, setHoveredSkills] = useState("")
+  const [hoveredContact, setHoveredContact] = useState("")
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -32,7 +36,7 @@ export const Navbar = () => {
       );
 
       // Observe each section
-      ['header', 'projects', 'skills', 'contact'].forEach((id) => {
+      ['about', 'projects', 'skills', 'contact'].forEach((id) => {
         const element = document.getElementById(id);
         if (element) {
           observer.observe(element);
@@ -51,30 +55,34 @@ export const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <button
-        onClick={() => scrollToSection('header')}
-        className={`header ${activeSection === 'header' ? 'active' : ''}`}
+      <li
+        onClick={() => scrollToSection('about')}
+        onMouseMove={() => setHoveredAbout("hovered")}
+        onMouseLeave={() => setHoveredAbout("")}
       >
-        About Me
-      </button>
-      <button
+        <span className={`about ${activeSection === 'about' ? 'active' : ''} ${hoveredAbout}`}>About Me</span>
+      </li>
+      <li
         onClick={() => scrollToSection('projects')}
-        className={`projects ${activeSection === 'projects' ? 'active' : ''}`}
+        onMouseMove={() => setHoveredProjects("hovered")}
+        onMouseLeave={() => setHoveredProjects("")}
       >
-        Projects
-      </button>
-      <button
+        <span className={`projects ${activeSection === 'projects' ? 'active' : ''} ${hoveredProjects}`}>Projects</span>
+      </li>
+      <li
         onClick={() => scrollToSection('skills')}
-        className={`skills ${activeSection === 'skills' ? 'active' : ''}`}
+        onMouseMove={() => setHoveredSkills("hovered")}
+        onMouseLeave={() => setHoveredSkills("")}
       >
-        Skills
-      </button>
-      <button
+        <span className={`skills ${activeSection === 'skills' ? 'active' : ''} ${hoveredSkills}`}>Skills</span>
+      </li>
+      <li
         onClick={() => scrollToSection('contact')}
-        className={`contact ${activeSection === 'contact' ? 'active' : ''}`}
+        onMouseMove={() => setHoveredContact("hovered")}
+        onMouseLeave={() => setHoveredContact("")}
       >
-        Contact
-      </button>
+        <span className={`contact ${activeSection === 'contact' ? 'active' : ''} ${hoveredContact}`}>Contact</span>
+      </li>
     </nav>
   );
 };

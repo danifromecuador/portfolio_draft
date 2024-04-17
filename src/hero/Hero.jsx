@@ -1,5 +1,5 @@
-import '../styles/components/Hero.css'
-import sun2 from '../assets/images/sun2.png'
+import './Hero.css'
+import sun2 from './images/sun2.png'
 
 export const Hero = () => {
   return (

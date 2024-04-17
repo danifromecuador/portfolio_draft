@@ -1,0 +1,36 @@
+.navbar {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 15px 0;
+}
+
+.navbar li span {
+  padding: 5px;
+}
+
+.active,
+.hovered {
+  background-image: url(./stripes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.active {
+  margin-left: 18px;
+}
+
+.hovered {
+  opacity: 55%;
+}
+
+.active.hovered {
+  opacity: 100%;
+}

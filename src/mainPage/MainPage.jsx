@@ -1,17 +1,17 @@
 // MainPage.js
 import { useRef } from 'react';
-import '../styles/pages/MainPage.css';
+import './MainPage.css';
 
 export const MainPage = () => {
-  const headerRef = useRef(null);
+  const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
 
   return (
     <div className="main-page">
-      <div id="header" ref={headerRef}>
-        header
+      <div id="about" ref={aboutRef}>
+        about
       </div>
       <div id="projects" ref={projectsRef}>
         projects

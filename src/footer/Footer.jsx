@@ -1,7 +1,7 @@
-import '../styles/components/Footer.css'
-import gmail from '../assets/icons/gmail.png'
-import linkedin from '../assets/icons/linkedin.png'
-import github from '../assets/icons/github.png'
+import './Footer.css'
+import gmail from './icons/gmail.png'
+import linkedin from './icons/linkedin.png'
+import github from './icons/github.png'
 
 export const Footer = () => {
   return (
