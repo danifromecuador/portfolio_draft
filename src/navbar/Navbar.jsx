@@ -32,7 +32,7 @@ export const Navbar = () => {
       );
 
       // Observe each section
-      ['header', 'projects', 'skills', 'contact'].forEach((id) => {
+      ['about', 'projects', 'skills', 'contact'].forEach((id) => {
         const element = document.getElementById(id);
         if (element) {
           observer.observe(element);
@@ -52,8 +52,8 @@ export const Navbar = () => {
   return (
     <nav className='navbar'>
       <button
-        onClick={() => scrollToSection('header')}
-        className={`header ${activeSection === 'header' ? 'active' : ''}`}
+        onClick={() => scrollToSection('about')}
+        className={`about ${activeSection === 'about' ? 'active' : ''}`}
       >
         About Me
       </button>

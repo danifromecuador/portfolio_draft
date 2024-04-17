@@ -24,7 +24,7 @@
   margin-left: 18px;
 }
 
-.header.active {
+.about.active {
   background-size: 34% 110%;
 }
 
@@ -42,7 +42,7 @@
 
 /* hover background effect */
 
-.navbar .header:hover,
+.navbar .about:hover,
 .navbar .projects:hover,
 .navbar .skills:hover,
 .navbar .contact:hover {
@@ -51,14 +51,14 @@
   opacity: 55%;
 }
 
-.navbar .header.active,
+.navbar .about.active,
 .navbar .projects.active,
 .navbar .skills.active,
 .navbar .contact.active {
   opacity: 100%;
 }
 
-.navbar .header:hover {
+.navbar .about:hover {
   background-size: 34% 110%;
 }
 
